@@ -47,7 +47,9 @@ pdf("gamma_exponential.pdf")
 print(p2)
 dev.off()
 
-
-
-
-1- pgamma(12.7, shape = 440^0.7815, rate = 1/0.164)
+#To calculate probability of failure at a given time: 
+w0 <- #enter original wall thickness
+t <- #enter time value
+nu <- #enter nu value
+mu <- #enter mu value
+1- pgamma(w0, shape = t^nu, rate = 1/mu)
